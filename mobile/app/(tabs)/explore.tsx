@@ -12,9 +12,7 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
+        <Image
           name="chevron.left.forwardslash.chevron.right"
           style={styles.headerImage}
         />

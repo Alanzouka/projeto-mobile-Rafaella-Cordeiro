@@ -1,9 +1,10 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, Button } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { blue } from 'react-native-reanimated/lib/typescript/Colors';
 
 export default function HomeScreen() {
   return (
@@ -19,27 +20,61 @@ export default function HomeScreen() {
         <ThemedText type="title"> AlanzokaPix</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Conta</ThemedText>
-        <ThemedText> <ThemedText type="defaultSemiBold">R$500,000</ThemedText>.
+        <ThemedText type="subtitle">Bem vindo ao seu Banco! <br></br>
+        <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="SUA CONTA"
+/>
+        </ThemedText>
+       
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="subtitle">Saldo</ThemedText>
+        <ThemedText>
+          R$520,00 <br></br>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="PIX"
+/>
+        </ThemedText>
         
-         
-        </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle">Limite total</ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          5.000,00{' '}
         </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">Vencimento</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          04/08/2035
         </ThemedText>
+        <ThemedText type="subtitle">Faturas em aberto</ThemedText>
+        <ThemedText>
+          Vencimento: 10/05<br></br> R$2.883,00 <br></br>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="Ler mais"
+/>
+         <br></br> Vencimento: 10/06 <br></br> R$1.884,00 <br></br>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="Ler mais"
+/>
+        </ThemedText>
+        <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="Ver mais faturas"
+/>
       </ThemedView>
     </ParallaxScrollView>
   );
