@@ -29,17 +29,13 @@ export default function TabTwoScreen() {
       </ThemedView>
       <Collapsible title="Transferências">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          Transferência enviada <br></br> Maykon da Costa <br></br> R$2,00:{' '} <br></br>
+          <ThemedText type="defaultSemiBold">VER MAIS</ThemedText> 
         </ThemedText>
+        <br></br>
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          Transferência recebida <br></br> de Maykon da Costa <br></br> R$200,00 <br></br> <ThemedText type="defaultSemiBold">VER MAIS</ThemedText> 
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
       <Collapsible title="Cartões">
         <ThemedText>
@@ -51,18 +47,18 @@ export default function TabTwoScreen() {
         <ThemedText>
           Olá! Seja bem-vindo ao Banco Alanzokapix. <br></br>
           Sou seu assistente virtual, pode me chamar de Fall e estou aqui para qualquer dúvida que tiver - seja consultar seu saldo, <br></br>
-          fazer Transferências ou até te lembrar do vencimento da sua fatura. Para mais informações clique abaixo. <br></br>
+          fazer Transferências ou até te lembrar do vencimento da sua fatura. Para uma conversa clique abaixo. <br></br>
+          <br></br>
           <Button color={'blue'}
   onPress={() => {
     console.log('You tapped the button!');
   }}
   title="Chat com Fall"
 />
-
-          
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        
+        <br></br> </ThemedText> <ThemedText> Se ainda estiver tendo dificuldades, entre em contato com um de nossos Funcionários </ThemedText> 
         <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">Clicando Aqui</ThemedText>
         </ExternalLink>
       </Collapsible>
       <Collapsible title="Faturas pagas">
