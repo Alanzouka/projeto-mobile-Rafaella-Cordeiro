@@ -1,4 +1,4 @@
-import { StyleSheet, Image, Platform } from 'react-native';
+import { StyleSheet, Image, Platform, Button } from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
@@ -13,15 +13,21 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
         <Image
-          name="chevron.left.forwardslash.chevron.right"
           style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Saldo disponível</ThemedText>
+        <ThemedText type="title">Histórico
+        <br></br>
+        <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="BUSCAR"
+/>
+      </ThemedText> 
       </ThemedView>
-      <ThemedText>R$500.000</ThemedText>
-      <Collapsible title="Saldo Separado">
+      <Collapsible title="Transferências">
         <ThemedText>
           This app has two screens:{' '}
           <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
@@ -35,7 +41,7 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Total em investimentos">
+      <Collapsible title="Cartões">
         <ThemedText>
           You can open this project on Android, iOS, and the web. To open the web version, press{' '}
           <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
@@ -43,16 +49,23 @@ export default function TabTwoScreen() {
       </Collapsible>
       <Collapsible title="Assistente">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
+          Olá! Seja bem-vindo ao Banco Alanzokapix. <br></br>
+          Sou seu assistente virtual, pode me chamar de Fall e estou aqui para qualquer dúvida que tiver - seja consultar seu saldo, <br></br>
+          fazer Transferências ou até te lembrar do vencimento da sua fatura. Para mais informações clique abaixo. <br></br>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="Chat com Fall"
+/>
+
+          
         <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
         <ExternalLink href="https://reactnative.dev/docs/images">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Histórico de compras">
+      <Collapsible title="Faturas pagas">
         <ThemedText>
           Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
@@ -63,7 +76,7 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Transferências">
+      <Collapsible title="Boletos">
         <ThemedText>
           This template has light and dark mode support. The{' '}
           <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
@@ -73,7 +86,7 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Agradecimentos">
+      <Collapsible title="Senhas">
         <ThemedText>
           This template includes an example of an animated component. The{' '}
           <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
