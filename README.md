@@ -8,4 +8,18 @@ HTML e CSS
 
 # Prints do projeto em modo Responsivo
 
-![](./mobile/assets/imagens/Captura de tela 2025-04-25 114601.png)
+![](./mobile/assets/images/cap.png)
+
+![](./mobile/assets/images/cap2.png)
+ 
+![](./mobile/assets/images/cap3.png)
+
+![](./mobile/assets/images/cap4.png)
+
+![](./mobile/assets/images/cap5.png)
+
+![](./mobile/assets/images/cap6.png)
+
+# Imagem uasada para o fundo
+
+![](./mobile/assets/images/image.png)
