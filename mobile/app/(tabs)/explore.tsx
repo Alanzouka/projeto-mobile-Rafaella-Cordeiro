@@ -38,10 +38,17 @@ export default function TabTwoScreen() {
         </ThemedText>
       </Collapsible>
       <Collapsible title="Cartões">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+      <br></br>
+        <ThemedText type="defaultSemiBold">
+          Cartão Físico <br></br>
         </ThemedText>
+        <ThemedText>
+          Alan Cordeiro Santos
+        </ThemedText>
+        <br></br>
+        <ThemedText type="defaultSemiBold"> Cartão Virtual</ThemedText>
+        <ThemedText> Alan Cordeiro Santos</ThemedText>
+        <br></br>
       </Collapsible>
       <Collapsible title="Assistente">
         <ThemedText>
@@ -57,37 +64,58 @@ export default function TabTwoScreen() {
 />
         
         <br></br> </ThemedText> <ThemedText> Se ainda estiver tendo dificuldades, entre em contato com um de nossos Funcionários </ThemedText> 
-        <ExternalLink href="https://reactnative.dev/docs/images">
+        <ExternalLink href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fjrocknews.com%2F2023%2F08%2Fjiluka-anime-weekend-atlanta.html&psig=AOvVaw3HhvXMdL_fIbLx0dtRe-uK&ust=1745621660115000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCVt8nh8YwDFQAAAAAdAAAAABAE">
           <ThemedText type="link">Clicando Aqui</ThemedText>
         </ExternalLink>
       </Collapsible>
       <Collapsible title="Faturas pagas">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+          <br></br>
+          Fatura paga <br></br> R$259,43 <br></br><ThemedText type="defaultSemiBold">VER MAIS <br></br></ThemedText> <br></br> Fatura atrasada <br></br> R$38,98{' '} <br></br>
+          <ThemedText type="defaultSemiBold">
+              VER MAIS <br></br>
           </ThemedText>
+          <br></br>
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
       <Collapsible title="Boletos">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+          Pagamento em aberto <br></br>
+          <ThemedText type="defaultSemiBold">Mais informações</ThemedText> 
+          </ThemedText>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="QR code"
+/>    
+        <ThemedText>
+          Pagamento em aberto <br></br>
+          <ThemedText type="defaultSemiBold">Mais informações</ThemedText>
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="QR code"
+/>    
       </Collapsible>
       <Collapsible title="Senhas">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+          Senha do cartão físico <br></br> ********* <br></br>
+          <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="VER SENHA"
+/>      <br></br>
+        <br></br> Senha do banco <br></br> ********* <br></br>
+        <Button color={'blue'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="VER SENHA"
+/>    
         </ThemedText>
         {Platform.select({
           ios: (

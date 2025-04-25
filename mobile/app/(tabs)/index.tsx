@@ -17,7 +17,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title"> AlanzokaPix</ThemedText>
+        <ThemedText type="title" > AlanzokaPix</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Bem vindo ao seu Banco! <br></br>
