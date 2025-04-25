@@ -10,9 +10,10 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#blue', dark: '#0a3b79' }}
       headerImage={
         <Image
+          source={require('@/assets/images/image.png')}
           style={styles.headerImage}
         />
       }>
